@@ -1,0 +1,9 @@
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/SerialTool.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/edit_cache.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/rebuild_cache.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/list_install_components.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/install.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/install/local.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/install/strip.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/SerialTool_autogen_timestamp_deps.dir
+C:/Users/lijialong/Desktop/Code_repository/MYCOM_Trae/build/CMakeFiles/SerialTool_autogen.dir

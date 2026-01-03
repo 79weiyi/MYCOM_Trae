@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+7c63096c3e3fce4a811e1734e2513f8f CMakeFiles/SerialTool_autogen
+9b1275f19047a14ab51b56f65a2bf156 SerialTool_autogen/timestamp

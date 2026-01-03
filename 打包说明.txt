@@ -1,0 +1,60 @@
+# Qt6串口工具打包说明
+
+## 1. 准备工作已完成
+
+✅ 已使用windeployqt收集所有应用程序依赖
+✅ release目录中已包含所有必要的DLL文件、插件和资源文件
+✅ Enigma Virtual Box已安装在系统中
+✅ icon.ico文件已复制到release目录
+
+## 2. 如何使用Enigma Virtual Box GUI完成打包
+
+1. **打开Enigma Virtual Box应用程序**
+   - 安装路径：`C:\Program Files (x86)\Enigma Virtual Box`
+   - 可以通过开始菜单搜索并打开
+
+2. **设置输入和输出文件**
+   - 在"Input File Name"中选择：
+     `C:\Users\lijialong\Desktop\Code_repository\MYCOM_Trae\build\release\serialtool.exe`
+   - 在"Output File Name"中设置输出文件名，例如：
+     `C:\Users\lijialong\Desktop\Code_repository\MYCOM_Trae\build\release\serialtool_single.exe`
+
+3. **添加所有依赖文件**
+   - 点击"Add"按钮
+   - 选择release文件夹中的所有文件
+   - 确保包括所有DLL文件、插件目录和资源文件
+
+4. **开始打包**
+   - 点击"Process"按钮
+   - 等待打包完成
+   - 打包成功后，会在指定位置生成单个可执行文件
+
+## 3. 替代方案
+
+如果您不想使用Enigma Virtual Box，也可以直接将release目录中的所有文件分发给用户。用户可以通过以下方式运行程序：
+
+- 双击 `serialtool.exe` 直接运行
+- 或运行 `run_serialtool.bat` 批处理脚本
+
+所有依赖文件已在同一目录中，程序可以正常运行。
+
+## 4. release目录内容
+
+release目录中包含以下必要文件：
+
+- **主程序**：serialtool.exe
+- **Qt核心库**：Qt6Core.dll, Qt6Gui.dll, Qt6Widgets.dll, Qt6SerialPort.dll等
+- **编译器库**：libgcc_s_seh-1.dll, libstdc++-6.dll, libwinpthread-1.dll
+- **系统依赖**：D3Dcompiler_47.dll, opengl32sw.dll
+- **插件目录**：generic, iconengines, imageformats, networkinformation, platforms, styles, tls
+- **翻译文件**：translations目录下的各种语言文件
+- **图标文件**：icon.ico
+- **运行脚本**：run_serialtool.bat
+
+## 5. 注意事项
+
+- 打包完成后，建议在没有Qt环境的电脑上测试生成的单个可执行文件
+- 如果程序无法运行，可能需要检查是否包含了所有必要的依赖文件
+- 如需重新编译程序，请先清理build目录，然后重新运行qmake和make命令
+
+祝您使用愉快！
